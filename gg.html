@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banker's Algorithm Simulator</title>
+    <link rel="stylesheet" href="ggstyle.css">
+    <script type="text/javascript" src="gg.js"></script>
+</head>
+<body>
+    <h1>Banker's Algorithm</h1>
+
+        <div id="inputs">
+            <p>Enter number of processes: <input type="text" id="numProcess"></p>
+            <p>Enter types of resources: <input type="text" id="numResource"></p>
+        </div>
+
+        <div id="buttons">
+            <input type="button" id="createTables" value="Create All Tables" onclick="createTables()"><br>
+            <input type="button" id="findNeed" value="Find Need" onclick="findNeed()" disabled>
+            <input type="button" id="findAvailable" value="Find Available" onclick="findAvailable()" disabled><br>
+            <input type="button" id="safeSequence" value="Find Safe Sequence" onclick="generateSafeSeq()" disabled><br>
+            <input type="button" id="reset" value="Reset" onclick="reset()">
+        </div>
+ 
+
+    <div id="allTables"></div>
+</body>
+</html>
